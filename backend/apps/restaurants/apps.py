@@ -1,0 +1,14 @@
+# apps/restaurants/apps.py
+
+from django.apps import AppConfig
+
+
+class RestaurantsConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'apps.restaurants'
+    label = 'restaurants'
+    verbose_name = 'Restaurants'
+    
+    def ready(self):
+        # Import signals if needed
+        pass
